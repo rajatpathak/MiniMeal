@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityPlan">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_app_green"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT TIME"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/clock"
+            android:tint="@color/color_app_green"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_weight="1"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#0073DA"/>
+
+    <TimePicker
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner" />
+
+<LinearLayout
+    android:padding="8dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/color_app_green"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOURS"/>
+    <android.support.v7.widget.CardView
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/color_app_green"
+            android:textStyle="bold"
+            android:id="@+id/tvHours"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="10"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/hourUp"
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@color/color_app_txt_black"
+                    android:src="@drawable/ic_action_uparrow"/>
+                <ImageView
+                    android:id="@+id/hourDown"
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@color/color_app_txt_black"
+                    android:src="@drawable/ic_action_downarrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_app_green"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes"/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/color_app_green"
+                    android:textStyle="bold"
+                    android:id="@+id/tvMinute"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="10"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/minuteUp"
+                        android:layout_margin="4dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="@color/color_app_txt_black"
+                        android:src="@drawable/ic_action_uparrow"/>
+                    <ImageView
+                        android:id="@+id/minuteDown"
+                        android:layout_margin="4dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="@color/color_app_txt_black"
+                        android:src="@drawable/ic_action_downarrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_app_green"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AM/PM"/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/color_app_green"
+                    android:textStyle="bold"
+                    android:id="@+id/tvAMPM"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="AM"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/ampmUp"
+                        android:layout_margin="4dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="@color/color_app_txt_black"
+                        android:src="@drawable/ic_action_uparrow"/>
+                    <ImageView
+                        android:id="@+id/ampmDown"
+                        android:layout_margin="4dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:tint="@color/color_app_txt_black"
+                        android:src="@drawable/ic_action_downarrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/btDone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/color_app_green"
+        android:background="@drawable/normal_round_corner"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

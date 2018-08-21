@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMember">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="18dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="@drawable/form_round_corner_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="First name"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:background="@drawable/form_round_corner_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="First name"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--upper part-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/form_round_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:text="FAMILY RELATION"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="SON/DAUGHTER"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:padding="4dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/normal_round_corner"
+                    android:backgroundTint="@color/color_app_chk_green"
+                    android:src="@drawable/ic_check" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/form_round_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:text="GENDER"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="MALE/FEMALE"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:padding="4dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/normal_round_corner"
+                    android:backgroundTint="@color/color_app_chk_green"
+                    android:src="@drawable/ic_check" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/form_round_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:text="DATE OF BIRTH"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="01/10/1999"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:padding="4dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/normal_round_corner"
+                    android:backgroundTint="@color/color_app_chk_green"
+                    android:src="@drawable/ic_check" />
+
+            </LinearLayout>
+
+
+            <!--bottom part-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_round_corner_no"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:text="WEIGHT"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="64 Kg"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:tint="@color/color_black"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_help" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_round_corner_no"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:text="HEIGHT"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:backgroundTint="@color/color_white"
+                        android:hint="125.5 CM"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_app_txt_black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:tint="@color/color_black"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_help" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btSubmit"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="25dp"
+                android:padding="4dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/color_app_green"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ADD MEMBER"
+                        android:textColor="@color/color_white"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_next"
+                        android:tint="@color/color_white"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
